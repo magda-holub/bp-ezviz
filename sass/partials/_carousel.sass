@@ -1,0 +1,118 @@
+#brandPage .alza-carousel
+    position: relative
+
+    .bp-container
+        text-align: center
+        position: relative
+        z-index: 3
+        
+        &__carousel
+            max-width: 100%
+            position: relative
+
+            // carousel
+            .swiper-container
+                height: auto
+                padding: 24px 10px
+                margin: 0 auto
+            
+            .swiper-wrapper
+                padding-bottom: 10px
+                width: 100%
+                margin: 0 auto
+                height: auto
+            
+            .swiper-slide
+                border-radius: 6px
+                cursor: default
+                height: auto
+                padding: 0 72px
+                transition: .3s ease-in-out
+                box-sizing: border-box
+                background: $c-white
+                text-align: center
+              
+            // bullets
+            .swiper-pagination
+                bottom: auto
+                left: 50%
+                transform: translate(-50%, 0)
+            
+            .swiper-pagination-bullet
+                margin-right: 5px
+
+                &:last-of-type
+                    margin-right: 0       
+
+            .swiper-pagination-bullet
+                opacity: 1
+                background: #E8E8E8
+                width: 12px
+                height: 12px
+            
+            .swiper-pagination-bullet-active
+                background-color: $c-blue-media
+                opacity: 1
+            
+            .swiper-pagination-bullet:focus,
+            .swiper-pagination-bullet-active:focus
+                outline: transparent
+            
+            // buttons
+            .swiper-button-next, .swiper-button-prev
+                top: 50%
+                height: 32px
+                transform: translateY(-50%)
+            
+            .swiper-button-next:focus, .swiper-button-prev:focus
+                outline: transparent
+            
+            .swiper-button-prev, 
+            .swiper-container-rtl .swiper-button-next,
+            .swiper-button-next, 
+            .swiper-container-rtl .swiper-button-prev
+                background-image: none
+            
+            .swiper-button-prev:after,
+            .swiper-button-next:after
+                display: none
+            
+            .swiper-button-prev,
+            .swiper-button-next
+                width: 25px
+                height: 60px
+                background-color: $c-blue-media
+                border-radius: 0 4px 4px 0
+                transition: .3s ease-in-out
+                box-shadow: 0 1px 4px 0px rgba(0,0,0,0.15)
+                margin: 0
+
+                &:hover
+                    background-color: darken($c-blue-media, 6%)
+                
+                .swiper-button-img
+                    width: 12px
+
+                    path
+                        fill: $c-white
+                             
+            .swiper-button-prev
+                left: 0
+
+                .swiper-button-img
+                    margin-left: 4px
+                
+            .swiper-button-next
+                right: 0
+                border-radius: 4px 0 0 4px
+                box-shadow: 0 1px 4px 0px rgba(0,0,0,0.15)
+
+                .swiper-button-img
+                    margin-right: 4px
+
+// layout-0
+.layout-0 #brandPage
+    .alza-carousel 
+        .bp-container__carousel 
+            .swiper-slide
+                padding: 0 65px

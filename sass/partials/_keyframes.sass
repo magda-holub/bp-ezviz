@@ -1,0 +1,15 @@
+@keyframes markerAnimation
+  0%
+    transform: scale(0.2)
+    opacity: 1
+
+  100%
+    transform: scale(1)
+    opacity: 0
+
+#brandPage
+    .bp-automation--marker__outer
+	    animation: markerAnimation 3s ease-out infinite
+
+    .bp-automation--marker__inner
+        animation: markerAnimation 3s ease-out -1.5s infinite
