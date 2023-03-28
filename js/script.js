@@ -1,19 +1,5 @@
-$("#layout_switch button").on("click", function () {
-    $("#testLayout").removeClass("layout-0").removeClass("layout-1");
-    $("body").addClass("mobile");
-});
-$("#layout_switch button:nth-child(2)").on("click", function () {
-    $("#testLayout").addClass("layout-0");
-    $("body.mobile").removeClass("mobile");
-});
-$("#layout_switch button:nth-child(3)").on("click", function () {
-    $("#testLayout").addClass("layout-1");
-    $("body.mobile").removeClass("mobile");
-});
-
 function revealer() {
     let button = document.getElementById('bp-revealer')
-    let content = document.getElementById('bp-content')
 
     let toggle = function (element) {
         element.classList.toggle('is-visible');
@@ -31,10 +17,10 @@ function revealer() {
     }, false);
 
     button.addEventListener('click', function handleClick(){
-        let initialText = 'Zobrazit více';
+        let initialText = document.getElementById('revealer-text__collapsed').textContent;
 
         if (button.textContent.toLocaleLowerCase().includes(initialText.toLowerCase())) {
-            button.textContent = 'Zobrazit méně';
+            button.textContent = document.getElementById('revealer-text__expanded').textContent;
         } else {
             button.textContent = initialText;
         }
@@ -10473,7 +10459,7 @@ const swiper = new Swiper('.swiper', {
     autoplay: {
       delay: 5000,
       pauseOnMouseEnter: true,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
     },
 
     pagination: {

@@ -77,8 +77,8 @@
 }
 
 .layout-0 #brandPage .bp-heading__h2 {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 15px;
+  line-height: 18.75px;
   font-weight: 400;
 }
 
@@ -553,8 +553,7 @@
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   cursor: pointer;
-  padding: 0;
-  width: 120px;
+  padding: 0 24px;
 }
 
 #brandPage .bp-revealer:hover {
@@ -578,7 +577,6 @@
 #brandPage .bp-revealer--container {
   padding: 48px 0;
   margin: auto;
-  width: 120px;
 }
 
 #brandPage .bp-toggle-content {
@@ -1537,7 +1535,7 @@ button.swiper-pagination-bullet {
   text-align: left;
   position: absolute;
   top: 47%;
-  left: 19%;
+  left: 16%;
 }
 
 #brandPage .bp-perex svg {
@@ -1854,7 +1852,7 @@ button.swiper-pagination-bullet {
 
 .layout-0 #brandPage .bp-story--image {
   height: 340px;
-  padding: 235px 24px 0 24px;
+  padding: 235px 21px 0 21px;
 }
 
 @media only screen and (max-width: 809px) {
